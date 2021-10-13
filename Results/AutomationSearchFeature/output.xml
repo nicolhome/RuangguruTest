@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.0 on win32)" generated="20211013 14:00:38.790" rpa="false">
+<suite id="s1" name="AutomationSearchFeature" source="C:\Users\nikite\PycharmProjects\RuangguruTest\Tests\AutomationSearchFeature.robot">
+<test id="s1-t1" name="SearchTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211013 14:00:39.212" level="INFO">Opening browser 'Chrome' to base url 'https://skillacademy.com/'.</msg>
+<status status="PASS" starttime="20211013 14:00:39.212" endtime="20211013 14:00:50.572"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCH}</arg>
+<arg>${KEYWORD}</arg>
+</arguments>
+<msg timestamp="20211013 14:00:50.574" level="INFO">Typing text 'pariwisata' into text field '//*[@data-testid="search-input-field"]'.</msg>
+<status status="PASS" starttime="20211013 14:00:50.574" endtime="20211013 14:00:50.798"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20211013 14:00:52.811" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211013 14:00:50.799" endtime="20211013 14:00:52.811"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCHBUTTON}</arg>
+</arguments>
+<msg timestamp="20211013 14:00:52.811" level="INFO">Clicking element '//*[@data-testid="search-icon"]'.</msg>
+<status status="PASS" starttime="20211013 14:00:52.811" endtime="20211013 14:00:53.021"></status>
+</kw>
+<status status="PASS" starttime="20211013 14:00:39.212" endtime="20211013 14:00:53.022" critical="yes"></status>
+</test>
+<doc>Web and API automation of Search feature Skillacademy web.
+How to run: robot Tests/AutomationSearchFeature.robot</doc>
+<status status="PASS" starttime="20211013 14:00:38.790" endtime="20211013 14:00:53.029"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="AutomationSearchFeature">AutomationSearchFeature</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
